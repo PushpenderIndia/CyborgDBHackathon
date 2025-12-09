@@ -1,0 +1,8 @@
+Flask
+flask-cors
+google-generativeai
+langgraph
+twilio
+python-dotenv
+requests
+cyborgdb-lite==0.12.0
