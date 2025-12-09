@@ -93,7 +93,7 @@ class CyborgDBRAG:
             print("Creating new medical knowledge index...")
 
             # Define index configuration (768 dimensions for text embeddings)
-            index_config = cyborgdb.IndexIVFFlat(dimension=768, n_lists=1024)
+            index_config = cyborgdb.IndexIVFFlat(dimension=768)
 
             # Create encrypted index
             self.index = self.client.create_index(

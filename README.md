@@ -59,7 +59,31 @@ graph TD
 
 ## Quick Start
 
-### Setup CyborgDB
+### Setup Backend (FastAPI)
+
+1. **Configure Environment**:
+```bash
+cd backend
+# Create .env file with MongoDB credentials:
+# MONGO_USERNAME=your_username
+# MONGO_PASSWORD=your_password
+# MONGO_CLUSTER=cluster.mongodb.net
+# MONGO_DB_NAME=rakshak_ai
+```
+
+2. **Install Dependencies**:
+```bash
+pip install -r requirements.txt
+```
+
+3. **Run Backend Server**:
+```bash
+python -m uvicorn main:app --reload --port 8000
+```
+
+Backend will run on http://localhost:8000
+
+### Setup Multi-Agent System with CyborgDB
 
 1. **Get API Key**: Free account at [db.cyborg.co](https://db.cyborg.co)
 
@@ -70,6 +94,7 @@ cp .env.example .env
 # Edit .env and add:
 # CYBORGDB_API_KEY=your_key_here
 # GEMINI_API_KEY=your_gemini_key
+# BACKEND_URL=http://localhost:8000
 ```
 
 3. **Install Dependencies**:
@@ -87,6 +112,8 @@ System automatically:
 - Creates 768-dimensional encrypted index
 - Populates medical knowledge vectors
 - Enables RAG for all 3 AI agents
+
+Multi-agent API will run on http://localhost:5000
 
 ### Test the System
 
