@@ -15,7 +15,7 @@ An AI-powered medical triage system using **CyborgDB** encrypted vector database
 
 1. **Emergency Detection Agent**
    - Queries CyborgDB for life-threatening condition patterns
-   - Matches symptoms against encrypted emergency knowledge base
+   - Matches symptoms against the encrypted emergency knowledge base
    - Impact: 40% more accurate emergency classification with secure knowledge retrieval
 
 2. **Specialist Routing Agent**
@@ -150,7 +150,7 @@ curl -X POST http://localhost:5000/analyze \
 ### Medical Accuracy
 - **Context-Aware AI**: Agents make decisions with relevant medical knowledge
 - **Reduced Hallucinations**: RAG grounds responses in verified medical data
-- **Conservative Triage**: Emergency detection errs on side of caution with knowledge context
+- **Conservative Triage**: Emergency detection errs on the side of caution with knowledge context
 
 ## Architecture Components
 
@@ -177,20 +177,20 @@ curl -X POST http://localhost:5000/analyze \
 cd react_native
 npm install
 npx expo prebuild --clean
-npx expo run:ios
+npx expo run: ios
 ```
 
 ### Android
 ```bash
 cd react_native
-npx expo run:android
+npx expo run: android
 ```
 
 ### Build APK
 ```bash
 cd react_native
 eas login
-eas build:configure
+eas build: configure
 eas build --platform android --profile preview
 ```
 
