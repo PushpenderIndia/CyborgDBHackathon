@@ -1,7 +1,9 @@
-// API Service for Nokia Multi-Agent and Backend Integration
+// API Service for Multi-Agent and Backend Integration
 
-const MULTI_AGENT_BASE_URL = 'https://nokia-multi-agent.vercel.app';
-const BACKEND_BASE_URL = 'https://nokia-backend.vercel.app';
+// For development: use localhost
+// For production: replace with your deployed URLs
+const MULTI_AGENT_BASE_URL = 'http://localhost:5000';
+const BACKEND_BASE_URL = 'http://localhost:8000';
 
 // Types for API responses
 export interface EmergencyResponse {
