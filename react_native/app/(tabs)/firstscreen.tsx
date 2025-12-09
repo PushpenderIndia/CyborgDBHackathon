@@ -5,7 +5,7 @@ import Vapi from '@vapi-ai/react-native'
 import LottieView from 'lottie-react-native'
 import { analyzeQuery } from '../services/api'
 
-const VAPI_PUBLIC_KEY = '6ce7c08f-31f4-4543-b687-6baeb7c96beb'
+const VAPI_PUBLIC_KEY = 'YOUR_VAPI_PUBLIC_KEY_HERE'
 
 const FirstScreen = () => {
   const router = useRouter()
