@@ -169,20 +169,13 @@ eas build --platform android --profile preview
 
 ## App Screenshots
 
-| Home | Symptom Assistant | Emergency |
+| | | |
 |:---:|:---:|:---:|
 | ![](docs/1.jpeg) | ![](docs/2.jpeg) | ![](docs/3.jpeg) |
-| **Report** | **Doctor Dashboard** | **Video Call** |
-| ![](docs/4.jpeg) | ![](docs/6.jpeg) | ![](docs/9.jpeg) |
+| ![](docs/4.jpeg) | ![](docs/5.jpeg) | ![](docs/6.jpeg) |
+| ![](docs/7.jpeg) | ![](docs/8.jpeg) | |
 
-## Detailed Documentation
-
-See [CYBORGDB_IMPLEMENTATION.md](./CYBORGDB_IMPLEMENTATION.md) for:
-- Complete CyborgDB setup guide
-- API endpoint documentation
-- RAG implementation details
-- Production deployment recommendations
-- Troubleshooting guide
+![](docs/9.jpeg)
 
 ## Environment Variables
 
