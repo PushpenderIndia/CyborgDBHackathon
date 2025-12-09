@@ -72,7 +72,7 @@ def emergency_agent(state: AgentState) -> AgentState:
             print(f"Warning: Could not retrieve RAG context: {e}")
 
     # Extract call_id from query using Gemini with RAG context
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
     extract_prompt = f"""Extract the following information from this query: "{query}"
 
 {rag_context}
@@ -191,7 +191,7 @@ def specialist_agent(state: AgentState) -> AgentState:
         except Exception as e:
             print(f"Warning: Could not retrieve RAG context: {e}")
 
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
     prompt = f"""
 Role & Goal
@@ -306,7 +306,7 @@ def classify_and_route(state: AgentState) -> AgentState:
         except Exception as e:
             print(f"Warning: Could not retrieve RAG context: {e}")
 
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    model = genai.GenerativeModel('gemini-2.5-flash-lite')
     prompt = f"""You are a medical triage AI. Your ONLY job is to determine if a patient needs IMMEDIATE emergency care (911/ambulance) or can wait for a doctor appointment.
 
 CRITICAL RULE: Be VERY conservative. Only classify as emergency if there is IMMEDIATE risk to life or limb RIGHT NOW.

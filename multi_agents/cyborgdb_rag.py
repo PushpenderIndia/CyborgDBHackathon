@@ -26,7 +26,7 @@ class CyborgDBRAG:
         if not gemini_api_key:
             raise ValueError("GEMINI_API_KEY not found in environment variables")
         genai.configure(api_key=gemini_api_key)
-        self.embedding_model = genai.GenerativeModel('gemini-2.5-pro')
+        self.embedding_model = genai.GenerativeModel('gemini-2.5-flash-lite')
 
         # Configure CyborgDB with in-memory storage 
         index_location = cyborgdb.DBConfig("memory")
