@@ -33,6 +33,7 @@ wheels/
 *.swo
 *~
 
+.cyborgdb_key
 # OS
 .DS_Store
 Thumbs.db
