@@ -34,6 +34,8 @@ An AI-powered medical triage system using **CyborgDB** encrypted vector database
 - **Non-Emergency**: Headaches, fever, skin rashes, joint pain, digestive issues
 - **Secure Indexing**: IVF-Flat algorithm with encrypted ANN search
 
+<img width="2940" height="1586" alt="image" src="https://github.com/user-attachments/assets/e7feb7dc-08c6-4b52-acdd-4cc2b2281bd5" />
+
 ### Architecture with CyborgDB
 
 ```mermaid
